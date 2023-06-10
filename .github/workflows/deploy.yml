@@ -31,7 +31,7 @@ jobs:
         run: |
           npm install
           npm run build
-          cp CNAME ./dist/CNAME
+#          cp CNAME ./dist/CNAME
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
