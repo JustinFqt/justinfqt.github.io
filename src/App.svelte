@@ -2,7 +2,7 @@
   import gitHubLogo from "./assets/github-svgrepo-com.svg";
   import linkedIn from "./assets/linkedin-svgrepo-com.svg";
   import massenaImg from "./assets/Massena.png";
-  import n7Img from "./assets/n7.png";
+  import n7Img from "./assets/n7.jpeg";
   import aaacnesImg from "./assets/projects/3acnes.png";
   import jeuTrain from "./assets/projects/jeuTrain.png";
   import mobiliteImg from "./assets/projects/plateformeMobilites.png";
@@ -187,31 +187,22 @@
         </div>
       </div>
   </div>
-  <div
-    class="min-h-screen grid place-items-center bg-gray-100 py-24 dark:bg-slate-800"
-    id="education"
-  >
+  <div class="min-h-screen grid place-items-center bg-gray-100 py-24 dark:bg-slate-700" id="education">
     <h2 class="text-2xl font-semibold font-mono mb-12">🎓 Education</h2>
-    <div class="container mx-auto w-full h-full">
+    <div class="container mx-auto w-full h-full px-2">
       <div class="relative wrap overflow-hidden h-full">
         <div
           class="absolute left-1/2 border-opacity-20 border-gray-600 h-full border"
         />
         {#each schools as school}
-          <div
-            class="mb-8 flex odd:flex-row-reverse justify-between items-center w-full"
-          >
-            <div class="order-1 w-5/12" />
-            <div
-              class="z-20 flex items-center order-1 bg-blue-900 shadow-xl w-32 h-8 rounded-full"
-            >
-              <h1 class="mx-auto font-semibold text-md text-white">
+          <div class="md:mb-8 flex odd:flex-row-reverse justify-between items-center w-full">
+            <div class="flex-1"></div>
+            <div class="shrink-0 mx-2 z-20 flex items-center bg-blue-900 shadow-xl w-32 h-8 rounded-full">
+              <h1 class="mx-auto font-semibold text-white">
                 {school.year}
               </h1>
             </div>
-            <div
-              class="order-1 flex flex-col lg:flex-row items-center justify-center gap-3 w-5/12 px-6 py-4"
-            >
+            <div class="flex flex-1 flex-col lg:flex-row items-center justify-center gap-3 md:py-4">
               {#if school.image != ""}
                 <img
                   class="h-24 object-cover shadow-xl rounded-xl"
@@ -223,7 +214,7 @@
                 <h5 class="text-xl font-bold text-gray-900 dark:text-white">
                   {school.name}
                 </h5>
-                <p class="mt-2 text-gray-500 max-w-xs dark:text-white">
+                <p class="mt-2 text-gray-500 max-w-xs dark:text-white text-sm">
                   {school.description}
                 </p>
               </div>
