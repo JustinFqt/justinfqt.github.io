@@ -103,16 +103,15 @@
     <div class="grid place-items-center">
       <h1 class="text-6xl font-semibold font-mono pb-4">Justin Facquet</h1>
       <p class="text-sm">
-        M2 student, Digital Sciences and Engineering, Cybersecurity, <a
+        Computer Science and Cybersecurity Engineer from <a
           class="underline decoration-wavy underline-offset-2 decoration-red-900 dark:decoration-white"
           href="https://www.enseeiht.fr/"
           target="_blank">INP-ENSEEIHT</a
-        >.
+        >, France.
       </p>
-      <p class="text-sm">France</p>
 
       <div class="flex">
-        <a href="https://github.com/JustinF18" target="_blank">
+        <a href="https://github.com/JustinFqt" target="_blank">
           <img
             src={gitHubLogo}
             class="h-24 p-6 hover:drop-shadow-xl"
@@ -120,13 +119,13 @@
           />
         </a>
         <a
-          href="https://www.linkedin.com/in/justin-facquet-8a99471aa/"
+          href="https://www.linkedin.com/in/justin-facquet/"
           target="_blank"
         >
           <img
             src={linkedIn}
             class="h-24 p-6 hover:drop-shadow-xl"
-            alt="Svelte Logo"
+            alt="LinkedIn Logo"
           />
         </a>
       </div>
