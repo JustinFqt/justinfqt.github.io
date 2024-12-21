@@ -154,17 +154,17 @@
     </div>
   </div>
   <div
-    class="min-h-screen grid place-items-center snap-center w-full py-24 dark:bg-slate-800"
+    class="min-h-screen w-full py-24 dark:bg-slate-800"
     id="projects-overview"
   >
     <div class="text-center w-full">
       <h2 class="text-2xl font-semibold font-mono pb-24">
         💻 Technical Projects
       </h2>
-      <div class="overflow-hidden ">
-        <div class="max-w-full flex gap-6 snap-x overflow-x-auto pb-14">
+      <div class="overflow-hidden">
+        <div class="flex gap-6 snap-x overflow-x-auto pb-14">
           {#each projects as project}
-            <div class="flex-none snap-normal snap-center first:pl-8 last:pr-8">
+            <div class="flex-none snap-normal snap-center first:pl-8 last:pr-8 lg:first:pl-24 lg:last:pr-24">
               <div class="flex flex-col items-center justify-center gap-3">
                 <img
                   class="h-52 object-cover {project.shadow
