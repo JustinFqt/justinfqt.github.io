@@ -98,7 +98,7 @@
 <main class="antialiased h-screen background dark:text-white">
   <div class="flex justify-center flex-col items-center gap-24 min-h-screen">
       <div class="mt-12">
-        <h1 class="text-6xl text-center font-semibold font-mono pb-4">Justin Facquet</h1>
+        <h1 class="text-6xl text-center font-semibold font-mono pb-8">Justin Facquet</h1>
         <p class="text-sm text-center">
           Computer Science and Cybersecurity Engineer from <a
             class="underline decoration-wavy underline-offset-2 decoration-red-900 dark:decoration-white"
@@ -107,7 +107,7 @@
           >, France.
         </p>
 
-        <div class="flex justify-center">
+        <div class="flex justify-center mt-6">
           <a href="https://github.com/JustinFqt" target="_blank">
             <img
               src={gitHubLogo}
@@ -135,7 +135,7 @@
         <div class="grid place-items-center mt-10">
           <div class="animate-bounce p-2 w-10 h-10">
             <svg
-              class="w-6 h-6 text-blue-900"
+              class="w-6 h-6 text-blue-900 dark:text-white"
               fill="none"
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -150,7 +150,7 @@
       </div>
   </div>
   <div
-    class="flex flex-col text-center min-h-screen w-full py-24 dark:bg-slate-800"
+    class="flex flex-col text-center min-h-screen w-full py-12 md:py-24 dark:bg-slate-800"
     id="projects-overview"
   >
       <h2 class="text-2xl font-semibold font-mono py-12">
@@ -159,7 +159,7 @@
       <div class="flex-1 content-center">
         <div class="flex gap-6 snap-x overflow-x-auto pb-14">
           {#each projects as project}
-            <div class="flex-none snap-normal snap-center first:ml-auto last:mr-auto first:pl-8 last:pr-8 lg:first:pl-24 lg:last:pr-24">
+            <div class="flex-none snap-center first:ml-auto last:mr-auto first:pl-8 last:pr-8 lg:first:pl-24 lg:last:pr-24">
               <div class="flex flex-col items-center justify-center gap-3">
                 <img
                   class="h-52 object-cover {project.shadow
