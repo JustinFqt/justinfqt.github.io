@@ -95,75 +95,71 @@
   ];
 </script>
 
-<main
-  class="antialiased h-screen w-screen background snap-proximity snap-y dark:text-white"
->
-  <div class="grid min-h-screen place-items-center snap-center">
-    <div />
-    <div class="grid place-items-center">
-      <h1 class="text-6xl font-semibold font-mono pb-4">Justin Facquet</h1>
-      <p class="text-sm">
-        Computer Science and Cybersecurity Engineer from <a
-          class="underline decoration-wavy underline-offset-2 decoration-red-900 dark:decoration-white"
-          href="https://www.enseeiht.fr/"
-          target="_blank">INP-ENSEEIHT</a
-        >, France.
-      </p>
+<main class="antialiased h-screen background dark:text-white">
+  <div class="flex justify-center flex-col items-center gap-24 min-h-screen">
+      <div class="mt-12">
+        <h1 class="text-6xl text-center font-semibold font-mono pb-4">Justin Facquet</h1>
+        <p class="text-sm text-center">
+          Computer Science and Cybersecurity Engineer from <a
+            class="underline decoration-wavy underline-offset-2 decoration-red-900 dark:decoration-white"
+            href="https://www.enseeiht.fr/"
+            target="_blank">INP-ENSEEIHT</a
+          >, France.
+        </p>
 
-      <div class="flex">
-        <a href="https://github.com/JustinFqt" target="_blank">
-          <img
-            src={gitHubLogo}
-            class="h-24 p-6 hover:drop-shadow-xl"
-            alt="GitHub Logo"
-          />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/justin-facquet/"
-          target="_blank"
-        >
-          <img
-            src={linkedIn}
-            class="h-24 p-6 hover:drop-shadow-xl"
-            alt="LinkedIn Logo"
-          />
-        </a>
-      </div>
-    </div>
-    <div>
-      <div>
-        <Button text="Technical Projects" url="#projects-overview" logo="💻" />
-        <Button text="Education" url="#education" logo="🎓" />
-      </div>
-      <div class="grid place-items-center mt-10">
-        <div class="animate-bounce p-2 w-10 h-10">
-          <svg
-            class="w-6 h-6 text-blue-900"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
+        <div class="flex justify-center">
+          <a href="https://github.com/JustinFqt" target="_blank">
+            <img
+              src={gitHubLogo}
+              class="h-24 p-6 hover:drop-shadow-xl"
+              alt="GitHub Logo"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/justin-facquet/"
+            target="_blank"
           >
-            <path d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
+            <img
+              src={linkedIn}
+              class="h-24 p-6 hover:drop-shadow-xl"
+              alt="LinkedIn Logo"
+            />
+          </a>
         </div>
       </div>
-    </div>
+      <div>
+        <div>
+          <Button text="Technical Projects" url="#projects-overview" logo="💻" />
+          <Button text="Education" url="#education" logo="🎓" />
+        </div>
+        <div class="grid place-items-center mt-10">
+          <div class="animate-bounce p-2 w-10 h-10">
+            <svg
+              class="w-6 h-6 text-blue-900"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </div>
+        </div>
+      </div>
   </div>
   <div
-    class="min-h-screen w-full py-24 dark:bg-slate-800"
+    class="flex flex-col text-center min-h-screen w-full py-24 dark:bg-slate-800"
     id="projects-overview"
   >
-    <div class="text-center w-full">
-      <h2 class="text-2xl font-semibold font-mono pb-24">
+      <h2 class="text-2xl font-semibold font-mono py-12">
         💻 Technical Projects
       </h2>
-      <div class="overflow-hidden">
+      <div class="flex-1 content-center">
         <div class="flex gap-6 snap-x overflow-x-auto pb-14">
           {#each projects as project}
-            <div class="flex-none snap-normal snap-center first:pl-8 last:pr-8 lg:first:pl-24 lg:last:pr-24">
+            <div class="flex-none snap-normal snap-center first:ml-auto last:mr-auto first:pl-8 last:pr-8 lg:first:pl-24 lg:last:pr-24">
               <div class="flex flex-col items-center justify-center gap-3">
                 <img
                   class="h-52 object-cover {project.shadow
@@ -190,10 +186,9 @@
           {/each}
         </div>
       </div>
-    </div>
   </div>
   <div
-    class="min-h-screen grid place-items-center snap-center bg-gray-100 py-24 dark:bg-slate-800"
+    class="min-h-screen grid place-items-center bg-gray-100 py-24 dark:bg-slate-800"
     id="education"
   >
     <h2 class="text-2xl font-semibold font-mono mb-12">🎓 Education</h2>
@@ -210,7 +205,7 @@
             <div
               class="z-20 flex items-center order-1 bg-blue-900 shadow-xl w-32 h-8 rounded-full"
             >
-              <h1 class="mx-auto font-semibold text-lg text-white">
+              <h1 class="mx-auto font-semibold text-md text-white">
                 {school.year}
               </h1>
             </div>
