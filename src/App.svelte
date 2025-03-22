@@ -193,7 +193,7 @@
       <div class="relative wrap overflow-hidden h-full">
         <div
           class="absolute left-1/2 border-opacity-20 border-gray-600 h-full border"
-        />
+       ></div>
         {#each schools as school}
           <div class="md:mb-8 flex odd:flex-row-reverse justify-between items-center w-full">
             <div class="flex-1"></div>
